@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HealthCare Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- LEFT: PATIENT LIST -->
+  <aside class="sidebar">
+    <h2>Patients</h2>
+    <div id="patientList"></div>
+  </aside>
+
+  <!-- CENTER: DASHBOARD -->
+  <main class="main">
+    <h2>Diagnosis History</h2>
+
+    <canvas id="bpChart"></canvas>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Respiratory Rate</h3>
+        <p id="resp">--</p>
+      </div>
+
+      <div class="card">
+        <h3>Temperature</h3>
+        <p id="temp">--</p>
+      </div>
+
+      <div class="card">
+        <h3>Heart Rate</h3>
+        <p id="heart">--</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- RIGHT: PROFILE -->
+  <aside class="profile">
+    <img id="profileImg" src="" alt="Profile">
+    <h3 id="name">Name</h3>
+    <p id="dob"></p>
+    <p id="gender"></p>
+    <p id="phone"></p>
+    <button>Show All Information</button>
+  </aside>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
